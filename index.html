@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/script.js"></script>
+    <title>RevoU</title>
+</head>
+<body>
+    <div class="kontainer">
+        <nav class="pembungkus">
+            <div class="merk">
+                <div class="firstname">kalkulator</div>
+                <div class="lastname">matematik</div>
+            </div>
+        <ul class="navigation">
+            <li><a href="#home" class="active">home</a></li>
+            <li><a href="#luassegitiga">luas segitiga</a></li>
+            <li><a href="#kelilingsegitiga">keliling segitiga</a></li>
+        </ul>
+        </nav>
+    </div>
+    <div id="home">
+        <h3 id="welcome">Welcome To Katik</h3>
+        <p id="welcome2">Hai Sobat, Selamat datang di Katik:)</p>
+        <p id="welcome3">Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan keliling segitiga</p>
+    </div>
+    <div id="luassegitiga">
+        <p id="ls">luas segitiga</p>
+        <img src="/assets/luassegitiga.jpg">
+        <div class="alas">
+            <label>Alas</label>
+            <input type="number" placeholder="masukkan nilai alas" id="alasSegitiga">
+        </div>
+        <div class="tinggi">
+            <label>Tinggi</label>
+            <input type="number" placeholder="masukkan nilai tinggi" id="tinggiSegitiga">
+        </div>
+        <input type="number" placeholder="Hasilnya adalah" id="Hasil1">
+        <button id="buttonluas" onclick="hitungluas()">Hasil</button>
+        <button class="reset"onclick="resetluas()">Reset</button>
+    </div>
+    <div id="kelilingsegitiga">
+        <p id="ks">keliling segitiga</p>
+        <img src="/assets/kelilingsegitiga.jpg">
+        <div class="sisi1">
+            <label>Sisi</label>
+            <input type="number" placeholder="masukkan nilai Sisi" id="sisiSegitiga1">
+        </div>
+        <div class="sisi2">
+            <label>Sisi</label>
+            <input type="number" placeholder="masukkan nilai Sisi" id="sisiSegitiga2">
+        </div>
+        <div class="sisi3">
+            <label>Sisi</label>
+            <input type="number" placeholder="masukkan nilai Sisi" id="sisiSegitiga3">
+        </div>
+        <input type="number" placeholder="Hasilnya adalah" id="Hasil2">
+        <button id="buttonkeliling" onclick="hitungkeliling()">Hasil</button>
+        <button class="reset" onclick="resetkeliling()">Reset</button>
+    </div>
+</body>
+</html>
